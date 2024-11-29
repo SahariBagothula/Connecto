@@ -25,10 +25,10 @@ import com.social.connecto.servicelayers.UserService;
 public class PostController {
 
     @Autowired
-    PostService postService;
+    private PostService postService;
 
     @Autowired
-    UserService userService;
+    private UserService userService;
 
     @PostMapping("/add/{userid}")
     public ResponseEntity<Post> createPost(@RequestBody Post post, @PathVariable int userid) {

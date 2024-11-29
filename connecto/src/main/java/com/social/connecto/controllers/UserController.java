@@ -17,7 +17,7 @@ import com.social.connecto.models.User;
 import com.social.connecto.servicelayers.UserService;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/user")
 public class UserController {
 
     @Autowired

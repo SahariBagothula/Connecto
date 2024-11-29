@@ -17,13 +17,13 @@ import com.social.connecto.repositories.UserRepository;
 public class PostService {
 
     @Autowired
-    PostRepository postRepository;
+    private PostRepository postRepository;
 
     @Autowired
-    UserService userService;
+    private UserService userService;
 
     @Autowired
-    UserRepository userRepository;
+    private UserRepository userRepository;
 
     public Post createPost(Post post, int userid) {
 
